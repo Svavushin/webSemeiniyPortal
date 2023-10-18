@@ -683,6 +683,9 @@ div.row.navbar-right.nav-svm-right a{
 }
 
 .btn-animation:hover{
+    border-color: #FFF;
+    background-color: #B7C136;
+    color:#FFF;
     transform: scale(1.1);
 }
 
