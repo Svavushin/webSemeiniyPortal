@@ -177,11 +177,11 @@ document.getElementById('img-btn-next-2').onmouseout = function() {
 
 
 /* Открыть боковое меню */
-function openNav() {
+function openNav1() {
   document.getElementById("mySidenav-tel").style.width = "100%";
 }
 
 /* Закрыть боковое меню */
-function closeNav() {
+function closeNav1() {
   document.getElementById("mySidenav-tel").style.width = "0";
 }
