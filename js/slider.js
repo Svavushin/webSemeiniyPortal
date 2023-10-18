@@ -36,7 +36,7 @@ $(document).ready(function(){
     });
   });
 
-
+/*----------------------------------------------------*/
 
 
   $(document).ready(function(){
@@ -81,9 +81,6 @@ $(document).ready(function(){
   /*----------------------------------------------*/ 
 
 
-
-
-  
 var menuOpen = false;
 
 var menuToggleImg = document.querySelector("#menuToggle img");
@@ -136,4 +133,55 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+/*----------------------------------------------------*/
+
+
+
+document.getElementById('img-btn-prev').onmouseover = function() {
+  this.src = 'src/left-sl-over.svg';
+}
+document.getElementById('img-btn-prev').onmouseout = function() {
+  this.src = 'src/left-sl-blue.svg';
+}
+
+document.getElementById('img-btn-next').onmouseover = function() {
+  this.src = 'src/right-sl-over.svg';
+}
+document.getElementById('img-btn-next').onmouseout = function() {
+  this.src = 'src/right-sl-blue.svg';
+}
+
+
+
+
+
+
+document.getElementById('img-btn-prev-2').onmouseover = function() {
+  this.src = 'src/left-sl-over.svg';
+}
+document.getElementById('img-btn-prev-2').onmouseout = function() {
+  this.src = 'src/left-sl-white.svg';
+}
+
+document.getElementById('img-btn-next-2').onmouseover = function() {
+  this.src = 'src/right-sl-over.svg';
+}
+document.getElementById('img-btn-next-2').onmouseout = function() {
+  this.src = 'src/right-sl-white.svg';
+}
+
+
+/*----------------------------------------------------*/
+
+
+/* Открыть боковое меню */
+function openNav() {
+  document.getElementById("mySidenav-tel").style.width = "100%";
+}
+
+/* Закрыть боковое меню */
+function closeNav() {
+  document.getElementById("mySidenav-tel").style.width = "0";
 }

@@ -4,8 +4,12 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Семейный портал</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="styles/styles.css" rel="stylesheet">
 
 
@@ -81,7 +85,7 @@
                         </div>
 
 
-                       
+                            <!--боковое меню для планшетов-->
                         <div id="mySidenav" class="sidenav">
 
                           <div class="container p-0">
@@ -132,27 +136,81 @@
                                   </div>
 
                               </div>
-
-                              
+                        
 
                             </div>
                           </div>      
 
                         </div>
+                         <!--боковое меню для планшетов-->
 
-                        <div class="row navbar-left nav-svm-left"> 
 
+                         <!--боковое меню для телефонов-->
 
+                         <div id="mySidenav-tel" class="sidenav-svm">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="src/close-menu.svg"></a>
+
+                        <div class="sidenav-svm-block">
+
+                              <div class="sidenav-svm-ico-block d-flex justify-content-center">
+                                  
+                                  <div class="d-flex justify-content-center">
+                                    <a><img src="src/vk_icon.svg" height="40px" width="40px" class="ico-push-anim"></a>
+                                  </div>
+                                  <div class="ico-header-svm-d-sidebar d-flex justify-content-center">
+                                    <a><img src="src/tvit_icon.svg" height="40px" width="40px" class="ico-push-anim sidenav-svm-ico"></a>
+                                  </div>
+                                  <div class="ico-header-svm-d-sidebar d-flex justify-content-center">
+                                    <a><img src="src/facebook_icon.svg" height="40px" width="40px" class="ico-push-anim sidenav-svm-ico"></a>
+                                  </div>
+                                  <div class="ico-header-svm-d-sidebar d-flex justify-content-center">
+                                    <a><img src="src/insta_icon.svg" height="40px" width="40px" class="ico-push-anim sidenav-svm-ico"></a>
+                                  </div>
+                                  <div class="ico-header-svm-d-sidebar d-flex justify-content-center">
+                                    <a><img src="src/ok_icon.svg" height="40px" width="40px" class="ico-push-anim sidenav-svm-ico"></a>
+                                  </div>
+
+                            </div>
+
+                        <div class="d7">
+                          <form>
+                            <input type="text" placeholder="Поиск по сайту...">
+                            <span><img src="src/search-sidebar.svg"></span>
+                          </form>
+                        </div>
+
+                        <div class="sidenav-svm-text">
+                          <a href="#">Главная</a>
+                          <a href="#">О портале</a>
+                          <a href="#">Всё для семьи</a>
+                          <a href="#">События</a>
+                          <a href="#">Вопросы</a>
+                          <a href="#">Контакты</a>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                          <a type="button" class="btn btn-text-color btn-animation btn-svm-sidebar-2" id="openModalButton-1">Написать нам</a>
+                        </div>
+
+                        </div>
+                      </div>
+                        
+                         <!--боковое меню для телефонов-->
+
+                        <div class="row navbar-left nav-svm-left d-flex justify-content-center"> 
+
+                          <div class="d-flex justify-content-center navbar-left-w">
 
                             <div class="col d-flex justify-content-center menu-header-svm-l">
                               <span id="menuToggle"><img src="src/vaadin_menu.svg" style="width: 100%;"></span>
                             </div>
-                            <div class="col d-flex justify-content-center ref-header-svm-h">
-                            <a><p class="m-0 nav-text-anim">О портале</p></a>
+
+                            <div class="col d-flex justify-content-center menu-header-svm-l-2">
+                              <span onclick="openNav()"><img src="src/vaadin_menu.svg" style="width: 100%;"></span>
                             </div>
 
                             <div class="col d-flex justify-content-center ref-header-svm-h">
-                              <a><p class="m-0 nav-text-anim">О портале</p></a>
+                            <a><p class="m-0 nav-text-anim">О портале</p></a>
                             </div>
 
                             <div class="col d-flex justify-content-center ref-header-svm-h">
@@ -162,6 +220,7 @@
                             <div class="col d-flex justify-content-center ref-header-svm-h">
                               <a><p class="m-0 nav-text-anim">События</p></a>
                             </div>
+                          </div>
 
                         </div>    
 
@@ -185,15 +244,21 @@
 
                           <div class="row navbar-right nav-svm-right">
 
-                            <div class="col d-flex justify-content-center ref-header-svm-h">
-                              <a><p class="m-0 nav-text-anim">Вопросы</p></a>
+
+                            <div class="d-flex justify-content-center navbar-right-w">
+
+                                <div class="col d-flex justify-content-center ref-header-svm-h">
+                                  <a><p class="m-0 nav-text-anim">Вопросы</p></a>
+                                </div>
+                                <div class="col d-flex justify-content-center ref-header-svm-h">
+                                  <a><p class="m-0 nav-text-anim">Контакты</p></a>
+                                </div>
+                                <div class="col d-flex justify-content-center ico-push-anim search-header-svm-r">
+                                  <a><img src="src/search_icon.svg" style="width: 100%;"></a>
+
                             </div>
-                            <div class="col d-flex justify-content-center ref-header-svm-h">
-                              <a><p class="m-0 nav-text-anim">Контакты</p></a>
-                            </div>
-                            <div class="col d-flex justify-content-center ico-push-anim search-header-svm-r">
-                              <a><img src="src/search_icon.svg" style="width: 100%;"></a>
-                            </div>
+
+                          </div>
 
                           </div>   
                     </div>
@@ -253,7 +318,7 @@
             <section class="pt-1 pb-1 mt-4 mb-4">
               <div class="container-fluid d-flex justify-content-center">
                   <div class="row row-svm-w d-flex justify-content-center">
-                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center desc-svm-mr">
+                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center desc-svm">
 
                         <div class="about-block">
                           <img src="src/about-img57.png" class="about-img">
@@ -263,7 +328,7 @@
 
 
                       </div>
-                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center desc-svm-mr">
+                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center desc-svm desc-svm-ml">
                         
                         <div class="about-block">
                           <img src="src/about-img57.png" class="about-img">
@@ -272,7 +337,7 @@
                         </div>
                         
                       </div>
-                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center">
+                      <div class="col-lg-4 col-md-3 col-sm-12 d-flex justify-content-center desc-svm desc-svm-ml">
                         
                         <div class="about-block">
                           <img src="src/about-img57.png" class="about-img">
@@ -326,12 +391,14 @@
   
                                   <div class="svm-header-tabs">
                                     
-                                    <div class="sl-btn-border">
-                                      <button class="slider-button sl-btn-l prev">&lt;</button>
+                                    <div>
+                                      <!-- <button class="slider-button sl-btn-l prev">&lt;</button> -->
+                                      <a class="accordion-l-btn prev"><img src="src/left-sl-blue.svg" id="img-btn-prev"></a>
                                     </div>
 
-                                    <div class="sl-btn-border">
-                                      <button class="slider-button sl-btn-r next">&gt;</button>
+                                    <div>
+                                      <!--<button class="slider-button sl-btn-r next">&gt;</button>-->
+                                      <a class="accordion-l-btn next"><img src="src/right-sl-blue.svg" id="img-btn-next"></a>
                                     </div>
 
                                   </div>
@@ -733,7 +800,7 @@
                           </div>
 
                           <div class="d-flex justify-content-center mt-3 btn-see-all">
-                            <a type="button" class="btn btn-text-color btn-animation btn2-svm">Посмотреть все</a>
+                            <a type="button" class="btn btn-text-color btn-animation btn-svm-3">Посмотреть все</a>
                         </div>
 
                       </div> 
@@ -907,12 +974,14 @@
   
                                   <div class="svm-header-tabs">
                                     
-                                    <div class="sl-btn-border-2">
-                                      <button class="slider-button sl-btn-l prev-2">&lt;</button>
+                                    <div>
+                                      <!-- <button class="slider-button sl-btn-l prev">&lt;</button> -->
+                                      <a class="accordion-l-btn prev-2"><img src="src/left-sl-white.svg" id="img-btn-prev-2"></a>
                                     </div>
 
-                                    <div class="sl-btn-border-2">
-                                      <button class="slider-button sl-btn-r next-2">&gt;</button>
+                                    <div>
+                                      <!--<button class="slider-button sl-btn-r next">&gt;</button>-->
+                                      <a class="accordion-l-btn next-2"><img src="src/right-sl-white.svg" id="img-btn-next-2"></a>
                                     </div>
 
                                   </div>
